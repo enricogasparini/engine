@@ -1,0 +1,44 @@
+# Build outputs
+server/setup/
+server/build/
+server/classes/
+server/dist/
+server/logs/
+server/appdata/
+server/mirthdb/
+client/build/
+client/classes/
+client/dist/
+command/build/
+command/classes/
+command/dist/
+donkey/build/
+donkey/classes/
+donkey/dist/
+donkey/setup/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Git
+.git/
+.github/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test outputs
+**/junit-reports/
+**/junit-html/
+**/code-coverage-reports/
+**/test_classes/
+
+# Misc
+*.log
+.sonar/
+exports/

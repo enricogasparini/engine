@@ -1,0 +1,14 @@
+services:
+  oie:
+    build: .
+    ports:
+      - "8080:8080"
+      - "8443:8443"
+    volumes:
+      - oie-appdata:/opt/oie/appdata
+      - oie-logs:/opt/oie/logs
+    restart: unless-stopped
+
+volumes:
+  oie-appdata:
+  oie-logs:

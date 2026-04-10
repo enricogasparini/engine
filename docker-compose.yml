@@ -9,6 +9,18 @@ services:
       - oie-logs:/opt/oie/logs
     restart: unless-stopped
 
+  oie-prod:
+    build: .
+    ports:
+      - "9080:8080"
+      - "9443:8443"
+    volumes:
+      - oie-prod-appdata:/opt/oie/appdata
+      - oie-prod-logs:/opt/oie/logs
+    restart: unless-stopped
+
 volumes:
   oie-appdata:
   oie-logs:
+  oie-prod-appdata:
+  oie-prod-logs:
